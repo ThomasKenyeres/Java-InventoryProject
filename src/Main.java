@@ -4,6 +4,10 @@ public class Main
     {
         System.out.println("Starting app...");
         StorageManager manager = new StorageManager();
+        StoreCapable sc = new PersistentStore();
+        manager.addStorage(sc);
+
+
     }
 
 }

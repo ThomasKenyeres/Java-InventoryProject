@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="060b3209-80d6-4d78-9888-23b2dce96660" name="Default" comment="">
+    <list default="true" id="060b3209-80d6-4d78-9888-23b2dce96660" name="Default" comment="Completing some getters and setters">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BookProduct.java" afterPath="$PROJECT_DIR$/src/BookProduct.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CDProduct.java" afterPath="$PROJECT_DIR$/src/CDProduct.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PersistentStore.java" afterPath="$PROJECT_DIR$/src/PersistentStore.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Product.java" afterPath="$PROJECT_DIR$/src/Product.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/StoreCapable.java" afterPath="$PROJECT_DIR$/src/StoreCapable.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,22 +22,56 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CDProduct.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/CDProduct.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BookProduct.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BookProduct.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
+      <file leaf-file-name="JAVA/" pinned="false" current-in-tab="false">
+        <entry file="uml://JAVA/">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement />
+              <nodes>
+                <node x="205.0" y="9.0">StorageManager</node>
+                <node x="-78.5" y="449.0">PersistentStore</node>
+                <node x="-110.0" y="248.0">Store</node>
+                <node x="317.5" y="325.5">Product</node>
+                <node x="312.0" y="206.0">StoreCapable</node>
+                <node x="496.5" y="466.5">CDProduct</node>
+                <node x="218.5" y="470.5">BookProduct</node>
+                <node x="-119.0" y="31.0">Main</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="CDProduct" target="Product">
+                  <point x="0.0" y="-27.5" />
+                  <point x="518.0" y="442.0" />
+                  <point x="471.0" y="442.0" />
+                  <point x="39.0" y="39.5" />
+                </edge>
+                <edge source="PersistentStore" target="Store">
+                  <point x="0.0" y="-27.5" />
+                  <point x="0.0" y="75.5" />
+                </edge>
+                <edge source="Main" target="StorageManager">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="BookProduct" target="Product">
+                  <point x="0.0" y="-27.5" />
+                  <point x="346.0" y="442.0" />
+                  <point x="393.0" y="442.0" />
+                  <point x="-39.0" y="39.5" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="1.0" x="87.0" y="235.0" />
+              <SelectedNodes />
+              <Categories>
+                <Category>Fields</Category>
+                <Category>Constructors</Category>
+                <Category>Methods</Category>
+                <Category>Properties</Category>
+                <Category>Inner Classes</Category>
+              </Categories>
+              <SCOPE>Project Files</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
             </state>
           </provider>
         </entry>
@@ -53,22 +86,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StoreCapable.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/StoreCapable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Store.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Store.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Store.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-              <folding />
+            <state relative-caret-position="324">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding>
+                <element signature="docComment;class#Store#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -104,10 +129,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/StoreCapable.java" />
-        <option value="$PROJECT_DIR$/src/Store.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Store.java" />
         <option value="$PROJECT_DIR$/src/BookProduct.java" />
+        <option value="$PROJECT_DIR$/src/Product.java" />
+        <option value="$PROJECT_DIR$/src/CDProduct.java" />
+        <option value="$PROJECT_DIR$/src/StoreCapable.java" />
       </list>
     </option>
   </component>
@@ -139,7 +166,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -168,6 +194,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -600,7 +627,8 @@
       <workItem from="1486577160932" duration="2311000" />
       <workItem from="1486642896508" duration="614000" />
       <workItem from="1486672854123" duration="530000" />
-      <workItem from="1486673443792" duration="24000" />
+      <workItem from="1486673443792" duration="620000" />
+      <workItem from="1486718685435" duration="1359000" />
     </task>
     <task id="LOCAL-00001" summary="Main class created - commit from IDE">
       <created>1486219915675</created>
@@ -634,15 +662,16 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14638000" />
+    <option name="totallyTimeSpent" value="16593000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="59" y="24" width="1307" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -654,7 +683,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24942617" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24942617" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -666,7 +695,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -682,7 +710,8 @@
     <MESSAGE value="StoreManager methods skeleton" />
     <MESSAGE value="All class files created - StoreCapable methods missing" />
     <MESSAGE value="Directories storing compiled files - created by IDE" />
-    <option name="LAST_COMMIT_MESSAGE" value="Directories storing compiled files - created by IDE" />
+    <MESSAGE value="Completing some getters and setters" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completing some getters and setters" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -693,11 +722,41 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/StoreCapable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Store.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+          <folding>
+            <element signature="docComment;class#Store#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="46" lean-forward="false" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/CDProduct.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#366#367#0" expanded="true" />
+            <element signature="e#412#413#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -705,7 +764,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#270#271#0" expanded="true" />
+            <element signature="e#301#302#0" expanded="true" />
+            <element signature="e#386#387#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -729,7 +792,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="docComment;class#Store#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -745,7 +810,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#366#367#0" expanded="true" />
+            <element signature="e#412#413#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -769,7 +838,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="docComment;class#Store#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -785,7 +856,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#366#367#0" expanded="true" />
+            <element signature="e#412#413#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -859,7 +934,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="docComment;class#Store#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -875,7 +952,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#366#367#0" expanded="true" />
+            <element signature="e#412#413#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -935,7 +1016,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="docComment;class#Store#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -951,7 +1034,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#366#367#0" expanded="true" />
+            <element signature="e#412#413#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1007,7 +1094,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="docComment;class#Store#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1023,7 +1112,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#366#367#0" expanded="true" />
+            <element signature="e#412#413#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1081,7 +1174,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="docComment;class#Store#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1097,7 +1192,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#366#367#0" expanded="true" />
+            <element signature="e#412#413#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1153,7 +1252,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="docComment;class#Store#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1169,7 +1270,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#366#367#0" expanded="true" />
+            <element signature="e#412#413#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1246,13 +1351,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/out/production/Java-InventoryProject/Main.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -1260,34 +1358,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Store.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/StorageManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/StoreCapable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PersistentStore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1301,17 +1375,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CDProduct.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="198">
+          <caret line="11" column="33" lean-forward="false" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+          <folding>
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#366#367#0" expanded="true" />
+            <element signature="e#412#413#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BookProduct.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="270">
+          <caret line="15" column="43" lean-forward="false" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+          <folding>
+            <element signature="e#270#271#0" expanded="true" />
+            <element signature="e#301#302#0" expanded="true" />
+            <element signature="e#386#387#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="38" lean-forward="false" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+          <folding>
+            <element signature="e#244#245#0" expanded="true" />
+            <element signature="e#271#272#0" expanded="true" />
+            <element signature="e#300#301#0" expanded="true" />
+            <element signature="e#328#329#0" expanded="true" />
+            <element signature="e#400#401#0" expanded="true" />
+            <element signature="e#439#440#0" expanded="true" />
+            <element signature="e#473#474#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1321,49 +1419,75 @@
           <ID>JAVA</ID>
           <OriginalElement />
           <nodes>
-            <node x="195.0" y="22.0">StorageManager</node>
-            <node x="-223.0" y="204.0">Store</node>
-            <node x="-190.5" y="411.0">PersistentStore</node>
-            <node x="230.0" y="352.0">Product</node>
-            <node x="204.0" y="218.0">StoreCapable</node>
-            <node x="314.5" y="466.0">CDProduct</node>
-            <node x="148.5" y="468.0">BookProduct</node>
-            <node x="-223.0" y="67.0">Main</node>
+            <node x="205.0" y="9.0">StorageManager</node>
+            <node x="-78.5" y="449.0">PersistentStore</node>
+            <node x="-110.0" y="248.0">Store</node>
+            <node x="317.5" y="325.5">Product</node>
+            <node x="312.0" y="206.0">StoreCapable</node>
+            <node x="496.5" y="466.5">CDProduct</node>
+            <node x="218.5" y="470.5">BookProduct</node>
+            <node x="-119.0" y="31.0">Main</node>
           </nodes>
           <notes />
           <edges>
             <edge source="CDProduct" target="Product">
-              <point x="0.0" y="-15.5" />
-              <point x="397.5" y="456.0" />
-              <point x="347.0" y="456.0" />
+              <point x="0.0" y="-27.5" />
+              <point x="518.0" y="442.0" />
+              <point x="471.0" y="442.0" />
               <point x="39.0" y="39.5" />
+            </edge>
+            <edge source="PersistentStore" target="Store">
+              <point x="0.0" y="-27.5" />
+              <point x="0.0" y="75.5" />
             </edge>
             <edge source="Main" target="StorageManager">
               <point x="0.0" y="0.0" />
               <point x="0.0" y="0.0" />
             </edge>
             <edge source="BookProduct" target="Product">
-              <point x="0.0" y="-15.5" />
-              <point x="214.5" y="456.0" />
-              <point x="269.0" y="456.0" />
+              <point x="0.0" y="-27.5" />
+              <point x="346.0" y="442.0" />
+              <point x="393.0" y="442.0" />
               <point x="-39.0" y="39.5" />
             </edge>
-            <edge source="PersistentStore" target="Store">
-              <point x="0.0" y="-27.5" />
-              <point x="0.0" y="75.5" />
-            </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="162.0" y="313.0" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="87.0" y="235.0" />
           <SelectedNodes />
           <Categories>
             <Category>Fields</Category>
-            <Category>Inner Classes</Category>
             <Category>Constructors</Category>
-            <Category>Properties</Category>
             <Category>Methods</Category>
+            <Category>Properties</Category>
+            <Category>Inner Classes</Category>
           </Categories>
           <SCOPE>Project Files</SCOPE>
           <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StoreCapable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PersistentStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Store.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#Store#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

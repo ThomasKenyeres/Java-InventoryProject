@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class StorageManager {
     private StoreCapable storage;
 
@@ -23,7 +25,29 @@ public class StorageManager {
     public String listProducts()
     {
         System.out.println("StorageManager.listProducts");
-        return null;
+
+        String result = "";
+        ArrayList<Product> products = storage.getAllProduct();
+
+        for(Product product: products)
+        {
+            String productString = "";
+            if(product instanceof CDProduct)
+            {
+                productString += product.getName() + " "
+                            + product.getPrice() + " "
+                            + ((CDProduct) product).getNumOfTracks() + "\n";
+            }
+            else if(product instanceof BookProduct)
+            {
+                productString += product.getName() + " "
+                            + product.getPrice() + " "
+                            + ((BookProduct) product).getPageSize() + "\n";
+            }
+            result += productString;
+        }
+
+        return result;
     }
 
     public int getTotalProductPrice()

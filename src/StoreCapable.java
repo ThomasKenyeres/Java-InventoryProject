@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 
-public interface StoreCapable {
+public interface StoreCapable
+{
     ArrayList<Product> getAllProduct();
 
     void storeCDProduct(String name, int price, int size);

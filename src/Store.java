@@ -112,7 +112,7 @@ public abstract class Store implements StoreCapable
         }
         catch (Exception e)
         {
-            System.out.println("error");
+
         }
         return resultProducts;
     }

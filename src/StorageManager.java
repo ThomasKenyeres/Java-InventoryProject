@@ -53,6 +53,15 @@ public class StorageManager {
     public int getTotalProductPrice()
     {
         System.out.println("StorageManager.getTotalProductPrice");
-        return 0;
+
+        int result = 0;
+        ArrayList<Product> products = storage.getAllProduct();
+
+        for (Product product: products)
+        {
+            result += product.getPrice();
+        }
+
+        return result;
     }
 }

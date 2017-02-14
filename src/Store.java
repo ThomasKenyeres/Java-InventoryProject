@@ -59,9 +59,6 @@ public abstract class Store implements StoreCapable
             StreamResult result = new StreamResult(file);
 
             transformer.transform(source, result);
-
-
-
         }
         catch(Exception e)
         {
@@ -76,11 +73,11 @@ public abstract class Store implements StoreCapable
     {
         if(type == "cd")
         {
-            Product product = new CDProduct(name, price, size);
+            return new CDProduct(name, price, size);
         }
         else if(type == "book")
         {
-            Product product = new BookProduct(name, price, size);
+            return new BookProduct(name, price, size);
         }
         return null;
     }
@@ -89,7 +86,8 @@ public abstract class Store implements StoreCapable
     {
         ArrayList resultProducts = new ArrayList<Product>();
 
-        try {
+        try
+        {
             File file = new File(fileName);
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = factory.newDocumentBuilder();
@@ -99,42 +97,22 @@ public abstract class Store implements StoreCapable
 
             NodeList productNodeList = document.getElementsByTagName("product");
 
-            for(int i = 0; i < productNodeList.getLength(); i++){
-
+            for(int i = 0; i < productNodeList.getLength(); i++)
+            {
                 Node productNode = productNodeList.item(i);
-
                 Element productElement = (Element) productNode;
 
-                //System.out.println(productElement.getAttribute("type"));
-
                 String pType = productElement.getAttribute("type");
-                if(pType == "cd")
-                {
-                    String cdName = productElement.getAttribute("name");
-                    int cdPrice = Integer.valueOf(productElement.getAttribute("name"));
-                    int cdSize = Integer.valueOf(productElement.getAttribute("name"));
+                String pName = productElement.getAttribute("name");
+                int pPrice = Integer.valueOf(productElement.getAttribute("name"));
+                int pSize = Integer.valueOf(productElement.getAttribute("name"));
 
-                    resultProducts.add(new CDProduct(cdName, cdPrice, cdSize));
-                }
-                else if(pType == "book")
-                {
-                    String bookName = productElement.getAttribute("name");
-                    int bookPrice = Integer.valueOf(productElement.getAttribute("name"));
-                    int bookSize = Integer.valueOf(productElement.getAttribute("name"));
-
-                    resultProducts.add(new BookProduct(bookName, bookPrice, bookSize));
-                }
-
-
-
-                System.out.println("\n");
+                resultProducts.add(createProduct(pType, pName, pPrice, pSize));
             }
-
-
-
         }
-        catch (Exception e){
-
+        catch (Exception e)
+        {
+            System.out.println("error");
         }
         return resultProducts;
     }
